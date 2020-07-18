@@ -693,7 +693,7 @@ template {
 
 @media (max-width: 592px) {
   .container {
-    max-width: 70%;
+    max-width: 87%;
   }
   .logo__image {
     max-width: 75%;
@@ -701,9 +701,6 @@ template {
 }
 
 @media (max-width: 320px) {
-  .container {
-    max-width: 87%;
-  }
   .hotel {
     padding-top: 5px;
     padding-bottom: 20px;
