@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=6d76b467-3991-4d4f-8cee-8af39e67b7ac&lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
 
   <body>
@@ -127,26 +131,46 @@
           </div>
         </div>
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel__slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="./img/slide-1.jpg" alt="slide" class="slide-img" />
+                  <img
+                    src="./img/slide-1.jpg"
+                    alt="slide"
+                    class="swiper-slide__image"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/slide-2.jpg" alt="slide" class="slide-img" />
+                  <img
+                    src="./img/slide-2.jpg"
+                    alt="slide"
+                    class="swiper-slide__image"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/slide-3.jpg" alt="slide" class="slide-img" />
+                  <img
+                    src="./img/slide-3.jpg"
+                    alt="slide"
+                    class="swiper-slide__image"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/slide-4.jpg" alt="slide" class="slide-img" />
+                  <img
+                    src="./img/slide-4.jpg"
+                    alt="slide"
+                    class="swiper-slide__image"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/slide-5.jpg" alt="slide" class="slide-img" />
+                  <img
+                    src="./img/slide-5.jpg"
+                    alt="slide"
+                    class="swiper-slide__image"
+                  />
                 </div>
               </div>
 
@@ -200,7 +224,7 @@
                 View&nbsp;Other&nbsp;Options
               </button>
             </div>
-            <div class="map"></div>
+            <div class="map" id="map"></div>
           </div>
         </div>
       </div>

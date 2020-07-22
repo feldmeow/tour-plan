@@ -60,7 +60,7 @@
 .swiper
     &-container 
         width: 100%
-        height: 450px
+        height: 100%
         border-radius: 8px
         position: relative
         &:after
@@ -74,11 +74,12 @@
             right: 0
             background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
             z-index: 40
-.slide-img
-    width: 100%
-    object-fit: scale-down
+    &-slide__img
+        width: 100%
+        object-fit: scale-down        
 .slider
     width: 728px
+    height: 450px
     &-button
         width: 30px
         height: 30px
@@ -171,4 +172,5 @@
 .map
     width: 347px
     height: 213px
-    border: 1px solid red
+    border-radius: 10px
+    overflow: hidden
