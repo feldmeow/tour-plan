@@ -1,0 +1,98 @@
+.reviews
+   padding: 40px 0 70px 0
+   &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 70px
+      margin-top: 0
+   &-slider
+      &__item
+         width: 730px
+         display: flex
+         flex-direction: column
+         align-items: center
+         margin: 45px auto 0
+         background-color: #fff
+         border-radius: 8px
+         padding: 0 62px 30px
+         position: relative
+         &::before
+            content: ''
+            background-image: url(../img/quote-left.svg)
+            background-repeat: no-repeat
+            width: 70px
+            height: 47px
+            position: absolute
+            top: 12.8px
+            left: 64px
+         &::after
+            content: ''
+            background-image: url(../img/quote-right.svg)
+            background-repeat: no-repeat
+            width: 70px
+            height: 47px
+            position: absolute
+            bottom: 113.71px
+            right: 64px
+      &__button
+         position: absolute
+         top: 50%
+         transform: translateY(-50%)
+         width: 30px
+         height: 30px
+         background-repeat: no-repeat
+         background-size: 10px
+         background-position: center
+         border: none
+         background-color: transparent
+         cursor: pointer
+         z-index: 99
+         &--prev
+            background-image: url(../img/arrow-prev-secondary.svg)
+            left: 0
+         &--next
+            background-image: url(../img/arrow-next-secondary.svg)
+            right: 0
+      &__profile
+         display: flex
+         flex-direction: column
+         align-items: center
+         margin-top: -45px
+      &__avatar
+         width: 90px
+         height: 90px
+         border-radius: 50%
+         object-fit: cover
+         margin-bottom: 9px
+      &__username
+         font-style: normal
+         font-weight: bold
+         font-size: 12px
+         line-height: 15px
+         color: #EC1F46
+         margin-bottom: 10px
+      &__date
+         font-style: normal;
+         font-weight: normal;
+         font-size: 10px;
+         line-height: 13px;
+         color: #000000;
+         margin-bottom: 4px
+      &__rating
+         width: 48px
+         display: flex
+         justify-content: space-evenly
+         margin-bottom: 32px
+      &__text
+         max-width: 537px
+         font-style: normal;
+         font-weight: normal;
+         font-size: 12px;
+         line-height: 19px
+         text-align: justify;
+         z-index: 5
+         margin: 0
