@@ -581,6 +581,7 @@ template {
   width: 728px;
   height: 450px;
   border-radius: 8px;
+  margin: 0 !important;
 }
 
 .hotel-slider__item {
@@ -970,6 +971,7 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
