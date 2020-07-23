@@ -581,7 +581,7 @@ template {
   width: 728px;
   height: 450px;
   border-radius: 8px;
-  margin: 0 !important;
+  margin-left: 0 !important;
 }
 
 .hotel-slider__item {
