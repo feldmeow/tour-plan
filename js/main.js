@@ -27,10 +27,3 @@ var reviewSlider = new Swiper(".reviews-slider", {
   },
   effect: "slide"
 });
-
-$(document).ready(function() {
-  $(".parallax-window").parallax({
-    imageSrc: "../img/newsletterbg.jpg",
-    speed: "0.6"
-  });
-});
