@@ -876,6 +876,13 @@ template {
           text-decoration-line: line-through;
 }
 
+.other-booking-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .other-card {
   position: relative;
   background-color: #0A223D;
@@ -1640,10 +1647,14 @@ template {
     padding: 76px 0 83px 0;
   }
   .newsletter-wrapper {
+    max-width: 350px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .newsletter-title__strong {
     margin-bottom: 37px;
@@ -1755,6 +1766,9 @@ template {
 }
 
 @media (max-width: 480px) {
+  .newsletter-wrapper {
+    max-width: 280px;
+  }
   .hotel-slider {
     height: 250px;
   }
@@ -1848,9 +1862,6 @@ template {
   }
   .newsletter-wrapper {
     max-width: 280px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .newsletter-title__strong {
     margin-bottom: 37px;

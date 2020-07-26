@@ -202,7 +202,9 @@
     .newsletter
         padding: 76px 0 83px 0
         &-wrapper
+            max-width: 350px
             flex-direction: column
+            align-items: flex-start
         &-title
             &__strong
                 margin-bottom: 37px
@@ -293,6 +295,9 @@
             &__text
                 max-width: 219px
 @media (max-width: 480px)
+    .newsletter
+        &-wrapper
+            max-width: 280px
     .hotel
         &-slider
             height: 250px
@@ -371,7 +376,7 @@
         min-height: 319px
         &-wrapper
             max-width: 280px
-            align-items: flex-start
+            
         &-title
             &__strong
                 margin-bottom: 37px
