@@ -10,9 +10,30 @@
                 width: 100%
                 height: 100%
                 object-fit: cover
+    .other
+        &-cards
+            grid-gap: 20px
+            grid-template-columns: repeat(3, auto)
+            grid-template-rows: 500px
+        &-card
+            height: 500px
+        &-unwrapped
+            &-card
+                &-info
+                    padding: 25px 21px 30px 27px
     .card
         width: 230px
         height: 230px
+@media ( max-width: 1000px )
+    .other
+        &-cards
+            grid-gap: 20px
+            grid-template-columns: repeat(2, auto)
+    .unwrapped
+        &-card
+            &-info
+                padding: 46px 21px 30px 44px
+    
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -72,10 +93,10 @@
         padding: 92px 0 93px 0
     .reviews
         &__title
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            line-height: 38px;
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
         &-slider
             &__item
                 &::before
@@ -129,12 +150,12 @@
             max-width: 576px
 
         &-title
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 25px;
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
             &__strong
-                font-size: 30px;
-                line-height: 38px;
+                font-size: 30px
+                line-height: 38px
     .subscribe
         width: 280px
         height: 55px
@@ -153,13 +174,30 @@
     .card
         width: 49%
         height: 230px
+    .other
+        &-cards
+            grid-gap: 20px
+            grid-template-columns: auto
+    .unwrapped
+        &-card
+            &-info
+                padding: 25px 21px 30px 27px 
+                   
 @media ( max-width:694px)
     .reviews
         &-slider
             &__item
                 max-width: 500px
-    
-@media ( max-width: 630px)
+    .other
+        &-stars
+            display: none 
+    .unwrapped
+        &-card
+            &-info
+                width: 100%
+                &__text
+                    display: none
+@media (max-width: 630px)
     .newsletter
         padding: 76px 0 83px 0
         &-wrapper
@@ -171,6 +209,53 @@
         &-slider
             &__item
                 max-width: 500px
+    .other
+        &-packages
+            padding-top: 0
+            padding-bottom: 50px
+        &-main-title
+            font-size: 19px
+            line-height: 30px
+        &-cards
+            grid-gap: 30px
+        &-card
+            grid-area: auto
+            height: 500px
+            &__image
+                height: 50%
+                object-fit: cover
+            &-info
+                padding: 13px 21px 25px 32px
+        &-unwrapped
+            &-card
+                flex-direction: column
+                grid-area: auto
+                height: 500px
+                &__img
+                    min-width: 100%  
+                    height: 50%
+                    object-fit: cover
+                
+                    
+            &-booking
+                &__info
+                    margin-bottom: 24px
+                   
+    .unwrapped
+        &-card
+            &-offer
+                padding: 4px 9px
+                font-style: normal
+                font-weight: 600
+                font-size: 8px
+                line-height: 10px
+            &-info
+                padding: 13px 21px 25px 32px 
+                &__booking
+                
+                    margin-bottom: 24px
+                &__title
+                    margin-bottom: 23px
 @media (max-width: 592px)
     .container
         max-width: 87%
@@ -183,8 +268,8 @@
     .reviews
         padding: 40px 0 60px 0
         &__title
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 18px
+            line-height: 23px
             max-width: 245px
             margin-right: auto
             margin-left: auto
@@ -213,14 +298,54 @@
     .activities
         padding: 40px 0 60px 0
         &__title
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 18px
+            line-height: 23px
             margin-bottom: 36px
     .card
         width: 280px
         height: 255px
         margin-left: auto
         margin-right: auto
+@media ( max-width: 400px  )
+    .other
+        &-cards
+            grid-template-rows: 440px
+        &-unwrapped
+            &-card
+                height: 440px
+               
+        &-card
+            height: 440px
+            &-info
+                &__title
+                    margin-bottom: 8px
+                &__booking
+                    margin-bottom: 13px
+    .unwrapped
+        &-card
+            &-info
+                &__title
+                    margin-bottom: 8px
+                &__booking
+                    margin-bottom: 13px
+@media (max-width: 354px)
+    .other
+        &-cards
+            grid-template-rows: 400px
+        &-unwrapped
+            &-card
+                height: 400px
+               
+        &-card
+            height: 400px
+            &-info
+                padding: 8px 17px 13px 23px
+               
+    .unwrapped
+        &-card
+            &-info
+                padding: 8px 17px 13px 23px 
+               
 @media (max-width: 320px)
     .hotel
         padding-top: 5px
