@@ -1535,6 +1535,7 @@ template {
             flex-direction: column;
     border: none;
     cursor: pointer;
+    background-color: #ffffff;
   }
   .menu-button__line {
     width: 16px;
