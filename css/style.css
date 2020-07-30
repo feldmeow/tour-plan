@@ -1514,6 +1514,12 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer__link:hover {
+  color: #EC1F46;
 }
 
 .footer__input {
@@ -1582,6 +1588,12 @@ template {
   line-height: 15px;
   color: #ffffff;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-bottom__text:hover {
+  color: #EC1F46;
 }
 
 .footer__conditions {
