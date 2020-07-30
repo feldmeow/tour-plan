@@ -1404,8 +1404,6 @@ template {
       -ms-grid-row-align: center;
       align-self: center;
   height: 192px;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .footer__categories {
@@ -1754,6 +1752,8 @@ template {
     grid-column-gap: 51px;
   }
   .footer__logo {
+    width: 104px;
+    height: 120px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
