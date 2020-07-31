@@ -1,0 +1,22 @@
+.menu-button .line {
+	display: block;
+	/* -webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out; */
+	transition: all 0.3s ease-in-out;
+}
+
+.menu-button.is-active .line:nth-child(1) {
+	opacity: 0;
+	/* -webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%); */
+	transform: translateX(-100%);
+}
+
+.menu-button.is-active .line:nth-child(3) {
+	opacity: 0;
+	/* -webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%); */
+	transform: translateX(100%);
+}

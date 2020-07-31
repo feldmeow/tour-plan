@@ -33,4 +33,11 @@ menuButton.addEventListener("click", function () {
 	document
 		.querySelector(".navbar-bottom")
 		.classList.toggle("navbar-bottom_visible");
+	document.body.classList.toggle("notOverflow");
+});
+
+$(document).ready(function () {
+	$(".menu-button").click(function () {
+		$(this).toggleClass("is-active");
+	});
 });

@@ -220,11 +220,29 @@
         &-menu
             flex-direction: column
             &__item
-                margin-bottom: 20px 
+                margin-bottom: 20px
+                transition: 0.3s
+                &:not(:first-child)
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 12px
+                    line-height: 15px
                 &_mobile
                     &_visible
-                        display: block      
-
+                        display: block
+                &:first-child
+                    margin-bottom: 27px
+                &:nth-child(2)
+                    margin-bottom: 40px
+                &:not(:first-child), &:not(:nth-child(2))
+                    &:hover
+                        color: $primary
+                    
+                          
+    .search
+        &__input
+            width: 245px
+            height: 40px   
     .logo
         &__image
             max-width: 75%
@@ -240,10 +258,13 @@
             border: none
             cursor: pointer
             background-color: $light
+
             &__line
                 width: 16px
                 height: 1px
                 background-color: $text-color
+                display: inline
+                
     .user
         &__name
             &_light
