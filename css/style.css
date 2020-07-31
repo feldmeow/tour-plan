@@ -1386,8 +1386,7 @@ template {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  grid-row-gap: 25px;
-  grid-column-gap: 117px;
+  grid-gap: 25px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
   -webkit-box-align: start;
@@ -1410,6 +1409,10 @@ template {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
+}
+
+.footer__legal {
+  padding-left: 70px;
 }
 
 .footer__social-links {
@@ -1556,6 +1559,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer__info {
