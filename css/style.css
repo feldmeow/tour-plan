@@ -1409,7 +1409,7 @@ template {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap-column: 30px;
+  grid-column-gap: 30px;
   -ms-grid-rows: min-content max-content 94px max-content 94px;
       grid-template-rows: -webkit-min-content -webkit-max-content 94px -webkit-max-content 94px;
       grid-template-rows: min-content max-content 94px max-content 94px;
@@ -1463,7 +1463,7 @@ template {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  grid-column: span;
+  grid-column: span 2;
 }
 
 .footer__contact-details {
