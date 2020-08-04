@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <script src="https://api-maps.yandex.ru/2.1/?apikey=6d76b467-3991-4d4f-8cee-8af39e67b7ac&lang=ru_RU"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <link rel="stylesheet" href="./css/button.css">
 </head>
 
@@ -183,7 +182,7 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">
+            <button data-toggle="modal" class="button booking__button">
               View&nbsp;Other&nbsp;Options
             </button>
           </div>
@@ -636,20 +635,20 @@
         <div class="footer__contact-details">
           <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">
-            Feel free to contact us by phone, email or by our contact form
+            Feel free to contact us by phone, email or by our contact&nbsp;form
           </p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-map-marker.svg"
                   alt="Icon: location"></div> 9748 Blossom Hill Rd
-              undefined Lansing, Idaho 68545 United States
+              undefined Lansing, Idaho 68545 United&nbsp;States
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-phone-call.svg"
                   alt="Icon: phone call"></div> Tel (business hours)
               : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br>
+              Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-email.svg"
@@ -683,11 +682,35 @@
     <!-- ./container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="./img/close.svg" alt="Icon: close">
+      </a>
+      <div class="modal__container">
+        <h3 class="modal__title ">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*">
+          <input type="text" class="input modal__input" name="phone" placeholder="Phone Number*">
+          <input type="text" class="input modal__input" name="phone" placeholder="Email*">
+          <textarea class="modal__message" name="message" placeholder="Message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required&nbsp;Fields</span>
+        </form>
+      </div>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
   <script src="./js/parallax.min.js"></script>
   <script src="./js/parallax-newsletter.js"></script>
   <script src="./js/map.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
