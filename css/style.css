@@ -1750,6 +1750,10 @@ template {
   height: 50px;
   width: 100%;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message {
@@ -1761,6 +1765,10 @@ template {
   resize: none;
   min-height: 123px;
   min-width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   margin-bottom: 15px;
 }
 
