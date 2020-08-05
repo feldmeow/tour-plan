@@ -70,7 +70,6 @@ $(document).ready(function () {
 	// Обработка форм (валидация)
 	$(".form").each(function () {
 		$(this).validate({
-			errorClass: "invalid",
 			rules: {
 				name: {
 					required: true,

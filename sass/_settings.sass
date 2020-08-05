@@ -20,8 +20,14 @@ button, input, textarea
 button
     cursor: pointer
     
-.invalid
+.error
     color: $primary
-    border-bottom: 1px solid $primary
-    font-size: 13px
-
+    font-size: 12px
+    position: relative
+    line-height: 15px
+    margin-bottom: 0 !important
+    display: block
+.subscribe
+    #email-error
+        position: absolute
+        top: 60px
