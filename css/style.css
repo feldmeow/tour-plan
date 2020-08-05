@@ -1566,6 +1566,8 @@ template {
   padding: 0 23px;
   height: 50px;
   width: 100%;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__input-group {
