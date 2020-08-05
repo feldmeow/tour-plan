@@ -81,6 +81,10 @@ $(document).ready(function () {
 					required: true,
 					email: true,
 				},
+				phone: {
+					required: true,
+					minlength: 16,
+				},
 			},
 			messages: {
 				name: {
@@ -92,14 +96,21 @@ $(document).ready(function () {
 
 				email: {
 					required: "We need your email address to contact you",
-					email: "Email must be in the format of name@domain.com",
+					email: "Email format is name@domain.com",
+				},
+
+				phone: {
+					required: "Please enter a valid number",
+					minlength: "Please enter a valid number",
 				},
 			},
 		});
 	});
-	$(".phone").mask("+7 (000) 000-00-00", {
+	$(".phone").mask("+7(ZZZ)ZZZ-ZZ-ZZ", {
+		watchDataMask: true,
+		watchInterval: 100,
 		translation: {
-			"0": {
+			Z: {
 				pattern: /[0-9]/,
 				optional: true,
 			},
