@@ -96,10 +96,10 @@
             grid-column-gap: 0
             grid-template-rows: repeat(9, minmax(60px, max-content))
         &__logo
-            width: 104px
-            height: 120px
             padding-top: 0
-            &--link
+            &-link
+                width: 104px
+                height: 120px
                 grid-row: 1/2
                 grid-column: 1
         &__social
@@ -301,9 +301,10 @@
             grid-template-columns: 1fr 1fr 1fr 1fr
             grid-template-rows: repeat(11, minmax(60px, max-content))
         &__logo
-            width: 104px
-            height: 120px
-            &--link
+            &-link
+                width: 104px
+                height: 120px
+            &-link
                 grid-row: 1/2
                 grid-column: 1
             &-network
@@ -469,7 +470,7 @@
             grid-row-gap: 30px
             grid-template-rows: max-content
             width: 100%
-        &__logo--link
+        &__logo-link
             grid-column: span 4
         &__social
             &-network
@@ -602,3 +603,16 @@
     .reviews
         padding-bottom: 50px
         padding-top: 40px
+
+@media ( min-width: 1000px  )
+    .primary__button
+        transition: all 0.8s ease
+        &:hover
+            background-color: $light
+            color: $primary
+    .footer__link, .navbar-menu__link, .breadcrumb-list__link, .booking__num
+        transition: 0.4s
+        &:hover
+            color: $primary
+    
+        

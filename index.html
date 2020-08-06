@@ -5,14 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BEST TOUR PLAN - Hotel Booking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
+    rel="preload" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
 
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/button.css">
   <link rel="stylesheet" href="./css/aos.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -24,7 +28,7 @@
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
           <input type="text" class="search__input" placeholder="Search location" />
-          <button class="search__button clickable-button">
+          <button class="search__button ">
             <img src="./img/search.svg" alt="Icon: search" class="search__icon" />
           </button>
         </form>
@@ -131,19 +135,24 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide hotel-slider__item">
-              <img src="./img/slide-1.jpg" alt="slide" class="hotel-slider__image" />
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/slide-1.jpg"
+                alt="slide" class="hotel-slider__image">
             </div>
             <div class="swiper-slide hotel-slider__item">
-              <img src="./img/slide-2.jpg" alt="slide" class="hotel-slider__image" />
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/slide-2.jpg"
+                alt="slide" class="hotel-slider__image">
             </div>
             <div class="swiper-slide hotel-slider__item">
-              <img src="./img/slide-3.jpg" alt="slide" class="hotel-slider__image" />
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/slide-3.jpg"
+                alt="slide" class="hotel-slider__image">
             </div>
             <div class="swiper-slide hotel-slider__item">
-              <img src="./img/slide-4.jpg" alt="slide" class="hotel-slider__image" />
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/slide-4.jpg"
+                alt="slide" class="hotel-slider__image">
             </div>
             <div class="swiper-slide hotel-slider__item">
-              <img src="./img/slide-5.jpg" alt="slide" class="hotel-slider__image" />
+              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/slide-5.jpg"
+                alt="slide" class="hotel-slider__image">
             </div>
           </div>
 
@@ -184,7 +193,7 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button data-toggle="modal" class="button booking__button">
+            <button data-toggle="modal" class="button booking__button primary__button">
               View&nbsp;Other&nbsp;Options
             </button>
           </div>
@@ -238,7 +247,7 @@
             <span class="other-booking-old-price">$ 10,500</span>
             <div class="other-booking">
               <div class="other-booking-price">$ 8,500</div>
-              <button class="other-booking__button" data-toggle="modal">Book Now</button>
+              <button class="other-booking__button primary__button" data-toggle="modal">Book Now</button>
             </div>
 
           </div>
@@ -246,7 +255,9 @@
         </div>
         <!-- other-unwrapped-card -->
         <div class="other-card" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <img src="./img/card-image-1.jpg" alt="Image: LUX* Belle Mare" class="other-card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-image-1.jpg"
+            alt="Image: LUX* Belle Mare" class="other-card__image">
+
           <div class="other-card-info">
             <h3 class="other-card-info__title">LUX* Belle Mare</h3>
             <div class="other-card-info__booking">
@@ -270,14 +281,16 @@
             <span class="other-booking-old-price">$ 8,500</span>
             <div class="other-booking">
               <div class="other-booking-price">$ 3,000</div>
-              <button class="other-booking__button" data-toggle="modal">Book Now</button>
+              <button class="other-booking__button primary__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <span class="other-card-offer">Flash Offer</span>
         </div>
         <!-- ./other__card -->
         <div class="other-card" data-aos="fade-right" data-aos-offset="300">
-          <img src="./img/card-image-2.jpg" alt="Image: White Palace" class="other-card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-image-2.jpg"
+            alt="Image: White Palace" class="other-card__image">
+
           <div class="other-card-info">
             <h3 class="other-card-info__title">White Palace</h3>
             <div class="other-card-info__booking">
@@ -301,14 +314,15 @@
             <span class="other-booking-old-price">$ 10,500</span>
             <div class="other-booking">
               <div class="other-booking-price">$ 9,500</div>
-              <button class="other-booking__button" data-toggle="modal">Book Now</button>
+              <button class="other-booking__button primary__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <span class="other-card-offer">Flash Offer</span>
         </div>
         <!-- ./other__card -->
         <div class="other-card" data-aos="fade-up" data-aos-offset="300">
-          <img src="./img/card-image-3.jpg" alt="Image: Luxury Place" class="other-card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Image: Luxury Place"
+            class="other-card__image" data-src="./img/card-image-3.jpg">
           <div class="other-card-info">
             <h3 class="other-card-info__title">Luxury Place</h3>
             <div class="other-card-info__booking">
@@ -332,14 +346,15 @@
             <span class="other-booking-old-price">$ 4,500</span>
             <div class="other-booking">
               <div class="other-booking-price">$ 2,500</div>
-              <button class="other-booking__button" data-toggle="modal">Book Now</button>
+              <button class="other-booking__button primary__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <span class="other-card-offer">Flash Offer</span>
         </div>
         <!-- ./other__card -->
         <div class="other-card" data-aos="fade-left" data-aos-offset="300">
-          <img src="./img/card-image-4.jpg" alt="Image: Hotel Five Star" class="other-card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-image-4.jpg"
+            alt="Image: Hotel Five Star" class="other-card__image">
           <div class="other-card-info">
             <h3 class="other-card-info__title">Hotel Five Star</h3>
             <div class="other-card-info__booking">
@@ -363,7 +378,7 @@
             <span class="other-booking-old-price">$ 6,500</span>
             <div class="other-booking">
               <div class="other-booking-price">$ 3,500</div>
-              <button class="other-booking__button" data-toggle="modal">Book Now</button>
+              <button class="other-booking__button primary__button" data-toggle="modal">Book Now</button>
             </div>
           </div>
           <span class="other-card-offer">Flash Offer</span>
@@ -380,7 +395,7 @@
       </h2>
       <form action="send.php" class="subscribe form" method="POST">
         <input type="email" class="subscribe__input" name="email" placeholder="Your email address" required>
-        <button class="subscribe__button clickable-button" type="submit" name="submit2">
+        <button class="subscribe__button" type="submit" name="submit2">
           Send
         </button>
       </form>
@@ -398,7 +413,9 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="./img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="./img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -428,7 +445,9 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="./img/reviews-avatar-2.jpg" alt="Photo: Brad Pitt" class="reviews-slider__avatar" />
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="./img/reviews-avatar-2.jpg" alt="Photo: Brad Pitt" class="reviews-slider__avatar">
+
                 <h3 class="reviews-slider__username">Brad Pitt</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -456,7 +475,8 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="./img/reviews-avatar-3.jpg" alt="Photo: Emma Watson" class="reviews-slider__avatar" />
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="./img/reviews-avatar-3.jpg" alt="Photo: Emma Watson" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Emma Watson</h3>
                 <span class="reviews-slider__date">Stayed 2 Sep, 2018</span>
                 <div class="reviews-slider__rating">
@@ -485,7 +505,9 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="./img/reviews-avatar-4.jpg" alt="Photo: Scarlett Johansson" class="reviews-slider__avatar" />
+                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src="./img/reviews-avatar-4.jpg" alt="Photo: Scarlett Johansson" class="reviews-slider__avatar">
+
                 <h3 class="reviews-slider__username">Scarlett Johansson</h3>
                 <span class="reviews-slider__date">Stayed 17 Jan, 2020</span>
                 <div class="reviews-slider__rating">
@@ -525,37 +547,40 @@
       </h2>
       <div class="activities-wrapper">
         <div class="card activities__card" data-aos="zoom-in">
-          <img src="./img/card-bg-1.jpg" alt="The curious corner 
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-bg-1.jpg" alt="The curious corner 
             of chamarel" class="card__image">
+
           <h3 class="card__title">The curious corner
             of&nbsp;chamarel</h3>
-          <button class="card__button" data-toggle="modal">Book Now</button>
+          <button class="card__button primary__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- ./card -->
         <div class="card activities__card" data-aos="zoom-in">
-          <img src="./img/card-bg-2.jpg" alt="Gymkhana club golf
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-bg-2.jpg" alt="Gymkhana club golf
             course" class="card__image">
+
           <h3 class="card__title">Gymkhana club golf<br>
             course</h3>
-          <button class="card__button" data-toggle="modal">Book Now</button>
+          <button class="card__button primary__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- ./card -->
         <div class="card activities__card" data-aos="zoom-in">
-          <img src="./img/card-bg-3.jpg" alt="Tamarind falls hiking
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-bg-3.jpg" alt="Tamarind falls hiking
             trip - full day" class="card__image">
+
           <h3 class="card__title">Tamarind falls hikinga
             trip&nbsp;-&nbsp;full day
 
           </h3>
-          <button class="card__button" data-toggle="modal">Book Now</button>
+          <button class="card__button primary__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- ./card -->
         <div class="card activities__card" data-aos="zoom-in">
-          <img src="./img/card-bg-4.jpg" alt="The blue marine discovery
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="./img/card-bg-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
-          <h3 class="card__title">The blue marine discovery
+          <h3 class=" card__title">The blue marine discovery
             quest</h3>
-          <button class="card__button" data-toggle="modal">Book Now</button>
+          <button class="card__button primary__button" data-toggle="modal">Book Now</button>
         </div>
         <!-- ./card -->
       </div>
@@ -564,7 +589,7 @@
   <!-- /.activities -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-wrapper"><a class="logo footer__logo--link" href="index.html">
+      <div class="footer-wrapper"><a class="logo footer__logo-link" href="index.html">
           <img src="./img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL&nbsp;CATEGORIES
@@ -647,14 +672,18 @@
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-phone-call.svg"
-                  alt="Icon: phone call"></div> Tel (business hours)
-              : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
+                  alt="Icon: phone call"></div><span>Tel (business hours)
+                : <a href="tel:269 1500" class="footer__link">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a class="footer__link tel" href="tel:52-56-61-38">52-56-61-38</a>
+                (08:00&nbsp;am – 20:00&nbsp;pm)
+                <br>
+                Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a> (08:00&nbsp;am –
+                14:00&nbsp;pm)</span>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-email.svg"
-                  alt="Icon: email"></div> cherly.lawson@example.com
+                  alt="Icon: email"></div> <a href="mailto:cherly.lawson@example.com"
+                class="footer__link">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -669,7 +698,7 @@
 
 
             <textarea class="footer__message" name="message" placeholder="Message"></textarea>
-            <button class="button footer__button" name="submit1" type="submit">Send</button>
+            <button class="button footer__button primary__button" name="submit1" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
@@ -718,6 +747,15 @@
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/aos.js"></script>
   <script src="./js/main.js"></script>
+  <script>function init() {
+      var imgDefer = document.getElementsByTagName("img");
+      for (var i = 0; i < imgDefer.length; i++) {
+        if (imgDefer[i].getAttribute("data-src")) {
+          imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
+        }
+      }
+    }
+    window.onload = init;</script>
 </body>
 
 </html>
