@@ -6,7 +6,7 @@
     &-cards
         display: grid
         grid-template-columns: repeat(3, 350px)
-        grid-template-rows: 500px 
+        grid-template-rows: max-content
         grid-gap: 30px
     // тайтл контейнера
     &-main-title
@@ -28,8 +28,7 @@
         justify-content: space-between
         align-items: center
         &__button
-            width: 120px
-            height: 40px
+            padding: 11px 27px 10px 26px
             color: $light
             font-style: normal
             font-weight: 600
@@ -60,11 +59,17 @@
         border-radius: 8px
         overflow: hidden
         grid-area: auto / span 1
+        display: flex
+        flex-direction: column
         // текстовый блок маленькой карточки
         &-info
             padding: 30px 21px 25px 32px
             color: $light
             width: 100% 
+            height: 50%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
             // название отеля в маленькой карточке
             &__title
                 font-style: normal
@@ -92,21 +97,23 @@
                     height: 14px
         // изображение в маленькой карточке
         &__image
-            width: 100%
+            max-width: 100%
             height: 250px
             object-fit: cover
+            display: block
+            
         // абсолютный баннер c маленькой карточки (Flash offer)
         &-offer 
             color: $light
             position: absolute
             background-color: $primary
             padding: 4px 9px
-            font-style: normal;
-            font-weight: 600;
-            font-size: 8px;
-            line-height: 10px;
+            font-style: normal
+            font-weight: 600
+            font-size: 8px
+            line-height: 10px
             top: 26px
-            border-radius: 0px 4px 4px 0px;
+            border-radius: 0px 4px 4px 0px
             z-index: 10
     // широкая карточка
     &-unwrapped
@@ -114,16 +121,19 @@
             position: relative
             display: flex
             // max-width: 730px
-            // min-height: 500px
+            min-height: 500px
             overflow: hidden
             color: $light
             background: $dark
             border-radius: 8px
-            grid-area: 1 / 1 / auto / span 2
+            grid-column: span 2
             &__img
-                height: 100%
+                background-image: url(../img/unwrapped-image.jpg)
                 width: 50%
-                object-fit: cover
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+               
             
 .unwrapped
     &-card

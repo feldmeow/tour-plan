@@ -14,9 +14,8 @@
         &-cards
             grid-gap: 20px
             grid-template-columns: repeat(3, auto)
-            grid-template-rows: 500px
-        &-card
-            height: 500px
+            
+        
     .unwrapped
         &-card
             &-info
@@ -348,12 +347,25 @@
     .other
         &-stars
             display: none 
+        &-unwrapped
+            &-card
+                flex-direction: column
+                &__img
+                    width: 100%  
+                    height: 250px
     .unwrapped
         &-card
             &-info
+                padding: 30px 21px 25px 32px
                 width: 100%
+                height: 50%
                 &__text
                     display: none
+                &__booking
+                    margin-bottom: 24px
+                &__title
+                    margin-bottom: 23px
+
   
 @media ( max-width: 648px )
     .footer
@@ -384,28 +396,13 @@
             line-height: 30px
         &-cards
             grid-gap: 30px
+            grid-template-columns: 1fr
         &-card
-            grid-area: auto
-            height: 500px
-            &__image
-                height: 50%
-                object-fit: cover
+            grid-row: span 1
+            grid-column: span 2
             &-info
                 padding: 13px 21px 25px 32px
-        &-unwrapped
-            &-card
-                flex-direction: column
-                grid-area: auto
-                height: 500px
-                &__img
-                    min-width: 100%  
-                    height: 50%
-                    object-fit: cover
-                
-                    
-            &-booking
-                &__info
-                    margin-bottom: 24px
+       
                    
     .unwrapped
         &-card
@@ -541,53 +538,37 @@
         margin-left: auto
         margin-right: auto
     
-@media ( max-width: 400px  )
-    .other
-        &-cards
-            grid-template-rows: 440px
-        &-unwrapped
-            &-card
-                height: 440px
-               
-        &-card
-            height: 440px
-            &-info
-                &__title
-                    margin-bottom: 8px
-                &__booking
-                    margin-bottom: 13px
-    .unwrapped
-        &-card
-            &-info
-                &__title
-                    margin-bottom: 8px
-                &__booking
-                    margin-bottom: 13px
 
-
-        &__title
-            &--inline
-                margin-right: 99px
         
 
         
 @media (max-width: 354px)
     .other
-        &-cards
-            grid-template-rows: 400px
         &-unwrapped
             &-card
-                height: 400px
+                min-height: 400px
+                &__image
+                    height: 200px
                
         &-card
-            height: 400px
+            min-height: 400px
+            &__image
+                height: 200px
             &-info
                 padding: 8px 17px 13px 23px
+                &__title
+                    margin-bottom: 10px
+                &__booking
+                    margin-bottom: 0
                
     .unwrapped
         &-card
             &-info
                 padding: 8px 17px 13px 23px 
+                &__title
+                    margin-bottom: 10px
+                &__booking
+                    margin-bottom: 0
                
 @media (max-width: 320px)
     .hotel
