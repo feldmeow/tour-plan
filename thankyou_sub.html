@@ -9,7 +9,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=6d76b467-3991-4d4f-8cee-8af39e67b7ac&lang=ru_RU"></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <link rel="stylesheet" href="./css/button.css">
 </head>
@@ -102,10 +103,10 @@
       <div class="hotel-info">
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
-            <h1 class="hotel-name hotel-info__name">Спасибо за подписку!</h1>
+            <h1 class="hotel-name hotel-info__name">Thanks for subscribing</h1>
           </div>
           <p class="hotel-description hotel-info__description">
-            Подписка оформлена. Теперь новости будут приходить на указанную почту.
+            Now the news will be sent to your email.
           </p>
         </div>
         <!-- /.hotel-info__text -->
@@ -153,7 +154,8 @@
             <li class="footer__item"><a href="#" class="footer__link">Deals.mu loyalty program
               </a></li>
             <li class="footer__item"><a href="#"
-                class="footer__link">Promote&nbsp;your&nbsp;Business&nbsp;on&nbsp;BTP</a></li>
+                class="footer__link">Promote&nbsp;your&nbsp;Business&nbsp;on&nbsp;BTP</a>
+            </li>
           </ul>
           <!-- ./footer__ul -->
         </div>
@@ -189,35 +191,40 @@
         <div class="footer__contact-details">
           <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">
-            Feel free to contact us by phone, email or by our contact form
+            Feel free to contact us by phone, email or by our contact&nbsp;form
           </p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-map-marker.svg"
                   alt="Icon: location"></div> 9748 Blossom Hill Rd
-              undefined Lansing, Idaho 68545 United States
+              undefined Lansing, Idaho 68545 United&nbsp;States
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-phone-call.svg"
                   alt="Icon: phone call"></div> Tel (business hours)
               : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br>
+              Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper"><img class="footer__icon" src="./img/footer-email.svg"
-                  alt="Icon: email"></div> cherly.lawson@example.com
+                  alt="Icon: email">
+              </div> cherly.lawson@example.com
             </li>
           </ul>
         </div>
         <!-- ./footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*">
-            <input type="text" class="input footer__input" name="phone" placeholder="Phone Number*">
-            <textarea class="footer__message" name="message" placeholder="Message" cols="30" rows="10"></textarea>
-            <button class="button footer__button" type="submit">Send</button>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group"><input type="text" class="input footer__input" name="name"
+                placeholder="Your Full Name*" required></div>
+            <div class="footer__input-group"><input type="tel" class="input footer__input phone" name="phone"
+                placeholder="Phone Number*" required></div>
+
+
+            <textarea class="footer__message" name="message" placeholder="Message"></textarea>
+            <button class="button footer__button" name="submit1" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
@@ -238,7 +245,8 @@
   <!-- /.footer -->
   <script src="./js/parallax.min.js"></script>
   <script src="./js/parallax-newsletter.js"></script>
-  <script src="./js/map.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
