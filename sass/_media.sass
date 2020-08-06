@@ -98,9 +98,10 @@
         &__logo
             width: 104px
             height: 120px
-            grid-row: 1/2
-            grid-column: 1
             padding-top: 0
+            &--link
+                grid-row: 1/2
+                grid-column: 1
         &__social
             &-network
                 grid-row: 1/2
@@ -302,10 +303,9 @@
         &__logo
             width: 104px
             height: 120px
-            grid-row: 1/2
-            grid-column: 1
-            padding-top: 0
-        &__social
+            &--link
+                grid-row: 1/2
+                grid-column: 1
             &-network
                 grid-row: 1/2
                 grid-column: span 3
@@ -469,7 +469,7 @@
             grid-row-gap: 30px
             grid-template-rows: max-content
             width: 100%
-        &__logo
+        &__logo--link
             grid-column: span 4
         &__social
             &-network
