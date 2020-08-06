@@ -3,8 +3,22 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Muli-SemiBold';
+  src: url("../fonts/Muli-SemiBold.woff") format("woff"), url("../fonts/Muli-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url("../fonts/Muli-Bold.woff") format("woff"), url("../fonts/Muli-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli-SemiBold', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
 }
@@ -1859,7 +1873,7 @@ template {
   .other-card {
     height: 500px;
   }
-  .other-unwrapped-card-info {
+  .unwrapped-card-info {
     padding: 25px 21px 30px 27px;
   }
   .card {
