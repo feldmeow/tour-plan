@@ -116,4 +116,11 @@ $(document).ready(function () {
 		},
 	});
 	AOS.init();
+
+	$(".map").mousemove(function swap() {
+		$(".map").html(
+			'<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7904.09828792573!2d98.29698905557251!3d7.88992770081096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sby!4v1596744698613!5m2!1sru!2sby"<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7904.09828792573!2d98.29698905557251!3d7.88992770081096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sby!4v1596744698613!5m2!1sru!2sby" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+		);
+		$(".map").off("mousemove", swap);
+	});
 });
