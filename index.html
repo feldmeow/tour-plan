@@ -5,11 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BEST TOUR PLAN - Hotel Booking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://allfont.ru/allfont.css?fonts=muli" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=6d76b467-3991-4d4f-8cee-8af39e67b7ac&lang=ru_RU"></script>
   <link rel="stylesheet" href="./css/button.css">
   <link rel="stylesheet" href="./css/aos.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -105,11 +104,11 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="stars">
-              <img src="./img/star.svg" alt="star" />
-              <img src="./img/star.svg" alt="star" />
-              <img src="./img/star.svg" alt="star" />
-              <img src="./img/star.svg" alt="star" />
-              <img src="./img/star.svg" alt="star" />
+              <img src="./img/star.svg" alt="star" class="hotel__star" />
+              <img src="./img/star.svg" alt="star" class="hotel__star" />
+              <img src="./img/star.svg" alt="star" class="hotel__star" />
+              <img src="./img/star.svg" alt="star" class="hotel__star" />
+              <img src="./img/star.svg" alt="star" class="hotel__star" />
             </div>
             <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
             <span class="offer hotel-info__offer">Flash Offer</span>
@@ -189,7 +188,9 @@
               View&nbsp;Other&nbsp;Options
             </button>
           </div>
-          <div class="map" id="map"></div>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041275564852!2d98.29254741415504!3d7.890750807949088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sby!4v1596673044194!5m2!1sru!2sby"
+            class="map"></iframe>
         </div>
       </div>
     </div>
@@ -716,7 +717,6 @@
   <script src="./js/parallax-newsletter.js"></script>
   <script src="./js/jquery.validate.min.js"></script>
   <script src="./js/jquery.mask.min.js"></script>
-  <script src="./js/map.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/aos.js"></script>
   <script src="./js/main.js"></script>
