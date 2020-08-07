@@ -38,9 +38,13 @@
             &-info
                 padding: 46px 21px 30px 44px
     
+    
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
+    .logo
+        &__image
+            width: 75%
     .navbar
         &-top
             padding-top: 30px
@@ -77,7 +81,7 @@
             &__item
                 max-width: 580px
     .activities
-        padding: 60px 0 70px 0
+        padding: 60px 0 50px 0
         &-wrapper
             flex-wrap: wrap
         &__card
@@ -169,6 +173,7 @@
                 top: 0
                 right: 0
                 z-index: 55
+                
         &__user, &__search
             &_mobile
                 &_hidden
@@ -176,6 +181,7 @@
                 &_visible
                     display: flex
                     flex-direction: column
+                    
         
         &-bottom
             display: none
@@ -187,6 +193,7 @@
             padding-top: 30px
             &_visible
                 display: block
+                overflow: scroll
         &-menu
             flex-direction: column
             &__item
@@ -225,7 +232,6 @@
             justify-content: space-between
             flex-direction: column
             border: none
-            cursor: pointer
             background-color: $light
 
             &__line
@@ -518,7 +524,14 @@
             grid-row: 2
             grid-column: 1
             justify-content: flex-start
-    
+@media ( max-width: 575px )
+    a
+        cursor: default
+    button
+        cursor: default
+    .map
+        cursor: default
+
     
 @media (max-width: 480px)
     .newsletter
@@ -604,15 +617,21 @@
         padding-bottom: 50px
         padding-top: 40px
 
-@media ( min-width: 1000px  )
+@media ( min-width: 575px  )
     .button
         transition: all 0.8s ease
         &:hover
             background-color: $light
             color: $primary
-    .footer__link, .navbar-menu__link, .breadcrumb-list__link, .booking__num
+            cursor: pointer
+    .footer__link, .navbar-menu__link, .breadcrumb-list__link, .booking__num, .footer-bottom__text
         transition: 0.4s
         &:hover
             color: $primary
-    
-        
+            cursor: pointer
+    a
+        cursor: pointer
+    .hotel-clider__button
+        cursor: pointer
+    .reviews-slider__button
+        cursor: pointer
