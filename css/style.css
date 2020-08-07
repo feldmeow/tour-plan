@@ -2689,11 +2689,11 @@ template {
 }
 
 @media (min-width: 1000px) {
-  .primary__button {
+  .button {
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
   }
-  .primary__button:hover {
+  .button:hover {
     background-color: #ffffff;
     color: #EC1F46;
   }
